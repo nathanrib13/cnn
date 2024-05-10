@@ -179,7 +179,7 @@
         font-size: 18px;
         font-family: 'Rubik', sans-serif;
         color: #fffcf4;
-        background-color: #505C49
+        background-color:#505C49;
     }
     .close-button:hover{
         transform: scale(1.05);
