@@ -1,0 +1,198 @@
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+    h1, h2, h3{
+        color: #505C49;
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
+    }
+    p{
+        color: #fffcf4;
+        font-family: 'EB Garamond', serif;
+        font-weight: 600;
+    }
+
+    .pix-title{
+        color: #fffcf4;
+        font-family: 'EB Garamond', serif;
+        font-weight: 800;
+
+    }
+
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        padding: 45px;
+        min-width: 200px;
+        color: #fffcf4;
+        font-family: 'EB Garamond', serif;
+        padding: 2%;
+    }
+
+    ul{
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        gap: 8px;
+        min-width: 250px;
+        list-style: none;
+        padding: 0;
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color:#505C49;
+        border-radius:45px;
+        border: 2px solid;
+        font-family: 'EB Garamond', serif;
+        margin-bottom: 10px;
+        
+    }
+
+    a{
+        font-family: 'EB Garamond', serif;
+        display: flex;
+        justify-content: center;
+        color: #fffcf4;
+        padding: 14px;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        font-size: 22px; 
+        text-decoration: none;
+    transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.5, 5);
+
+
+    }
+
+    li:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+        background-color: #59694f;
+
+    }
+
+    .text-area{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-width: 350px;
+        width: 50%;
+    }
+
+    .heart {
+        min-width: 300px;
+        position: fixed;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+
+    .pix-modal{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: background-color 0.3s, opacity 0.3s, visibility 0s 0.3s;
+    
+    }
+    .pix-modal.show {
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+        transition: background-color 0.3s, opacity 0.3s, visibility 0s;
+    }
+
+    .pix-container {
+        position: relative;
+        width: 50%;
+        height: auto;
+        background-color: #505C49;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        padding: 15px;
+        min-width: 300px;
+    }
+
+    .qrcode-container{
+        display: flex;
+        align-items: center;
+        justify-content: center
+
+    }
+
+    .pix-qrcode{
+        max-width: 250px;
+        min-width: 200px;
+        border: 5px solid #789268;
+    }
+
+    .footer-div{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: -10px;
+    }
+
+    .title-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+
+    }
+
+    .text-3, .text-4, .text-1{
+        margin-top: -10px;
+        font-family: 'EB Garamond', serif;
+
+    }
+
+    .close-button{
+        background-color: #fffcf4;
+        border: none;
+        border-radius: 100%;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: 'EB Garamond', serif;
+    }
+    .close-button:hover{
+
+        transform: scale(1.05);
+    }
+
+
+
+    @media screen and (max-width: 719px) {
+        ul{
+        width: 140%;
+    }
+        li{
+            border-radius: 0;
+
+    }
+    }
+        
