@@ -169,9 +169,7 @@
     }
 
     .close-button{
-        background-color: #fffcf4;
-        color: #789268;
-        padding: 12px;
+        color: #fffcf4;
         border: none;
         border-radius: 100%;
         position: absolute;
